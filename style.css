@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 400px;
+  height: 70vh;
+  margin: 10rem auto;
+  border: 1px solid black;
+}
+
+.card-display {
+  height: 25vh;
+  max-width: 400px;
+  background-image: url('./images/bg-main-mobile.png');
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+input {
+  width: 80%;
+  height: 2.5rem;
+  padding-left: 1rem;
+  border-radius: 5px;
+  border: 1px solid grey;
+  margin-bottom: 1.5rem;
+}
+
+.card-back, .card-front {
+  position: relative;
+}
+
+.card-back {
+  top: 30px;
+  left: 70px;
+}
+
+.card-front {
+  left: 20px;
+  bottom: 40px;
+}
+
+.card-image-container {
+  position: relative;
+  top: 30px;
+}
+
+.front-card-text-container {
+  position: relative;
+  color: white;
+  bottom: 8rem;
+  left: 3rem;
+  line-height: 2rem;
+}
+
+.card-bottom {
+  display: flex;
+}
+
+.name-on-card {
+  padding-right: 6rem;
+}
