@@ -85,7 +85,7 @@ input {
 }
 
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 850px) {
   .container {
     grid-template-columns: repeat(2, 1fr);
     max-width: 100vw;
@@ -95,19 +95,20 @@ input {
 
   .card-display {
     height: 100vh;
+    width: 20rem;
   }
 
   .card-front {
-    left: 12rem;
+    left: 7rem;
   }
 
   .card-back {
     top: 18rem;
-    left: 15rem;
+    left: 9rem;
   }
 
   .front-card-text-container {
-    left: 15rem;
+    left: 9rem;
   }
 
 }
