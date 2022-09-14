@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
 <body>
@@ -28,12 +29,12 @@
       <label for="name">CARDHOLDER NAME</label>
       <input type="text" placeholder="e.g. Jane Appleseed" id="name">
       <label for="number">CARDHOLDER NUMBER</label>
-      <input type="number" placeholder="e.g. 1234 5678 9123 0000" id="number" maxlength="12">
+      <input type="text" placeholder="e.g. 1234 5678 9123 0000" id="number" pattern="[0-9]{4}" maxlength="16">
       <label for="expiration-date">EXP. DATE</label>
       <div class="expiration-date-container">
-        <input type="number" placeholder="MM" minlength="2" maxlength="2">
-        <input type="number" placeholder="YY">
-        <input type="number" placeholder="e.g. 123">
+        <input type="text" placeholder="MM" maxlength="2" pattern="[0-9]{4}">
+        <input type="text" placeholder="YY" maxlength="2" pattern="[0-9]{4}">
+        <input type="text" placeholder="e.g. 123" maxlength="3" pattern="[0-9]{4}">
       </div>
     </form>
   </div>
